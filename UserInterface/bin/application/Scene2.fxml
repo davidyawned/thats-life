@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<!-- 
+	DESCRIPTION
+	
+   CSE 360(phase 4)
+ * Name: Junehyuk Ye(1219339069) 
+ * Prototype: User Interface
+ * Scene2: Home-screen
+   --> 
+   
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C6F4F5; -fx-border-image-width: 2px 2px 2px 3px; -fx-border-color: #9000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.Select Categories " />
+            <MenuBar layoutX="14.0" layoutY="72.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Project">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Project 1" />
+                        <MenuItem mnemonicParsing="false" text="Project 2" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <MenuBar layoutX="121.0" layoutY="72.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Life cycle ">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Planning" />
+                        <MenuItem mnemonicParsing="false" text="Execution" />
+                        <MenuItem mnemonicParsing="false" text="Monitoring &amp; Control" />
+                        <MenuItem mnemonicParsing="false" text="Closure" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <MenuBar layoutX="240.0" layoutY="72.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Effort Scale">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Low" />
+                        <MenuItem mnemonicParsing="false" text="Medium" />
+                        <MenuItem mnemonicParsing="false" text="High" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Press &quot;Start Activity&quot; Button to start  " />
+            <Button layoutX="59.0" layoutY="169.0" mnemonicParsing="false" onAction="#switchToScene3" text="Start Activity" />
+            <Text layoutX="14.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Press &quot;Stop activity&quot; Button to stop" />
+            <Button layoutX="59.0" layoutY="259.0" mnemonicParsing="false" onAction="#switchToScene4" text="Stop Activity" />
+            <Text layoutX="14.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Data access" />
+            <Button layoutX="75.0" layoutY="338.0" mnemonicParsing="false" onAction="#switchToScene5" text="Effort Log" />
+            <Button layoutX="190.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchToScene6" text="Defect Log" />
+            <Button layoutX="327.0" layoutY="340.0" mnemonicParsing="false" text="Data Report" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
